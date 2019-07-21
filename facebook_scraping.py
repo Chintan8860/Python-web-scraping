@@ -1,5 +1,5 @@
 import requests
-
+#work on python 3.x version
 access_token=""    #enter  your access token given by facebook
 graph_url = "https://graph.facebook.com/v3.3"
 value= input("enter a field value: ")
@@ -8,10 +8,3 @@ url = graph_url + post_args
 print(url)
 r = requests.get(url)
 print(r.text[:])
-#
-
-# import urllib.request
-# response = urllib.request.urlopen('http://www.utu.ac.in/')
-# html = response.read()
-# text = html.decode()
-# print(text)
